@@ -6,6 +6,10 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "andreiio/blade-remix-icon": "^3.2",
+        "blade-ui-kit/blade-ui-kit": "^0.4.0",
+        "brunocfalcao/blade-feather-icons": "^3.0",
+        "codeat3/blade-google-material-design-icons": "^1.18",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
