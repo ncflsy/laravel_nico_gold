@@ -13,7 +13,8 @@
     <main class="flex justify-center items-center h-screen">
         <div class="bg-white p-8 rounded-lg shadow-lg max-w-md">
             <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Form Input Data Mahasiswa</h1>
-            <form action="#" method="POST">
+            <form action="/store" method="post">
+                @csrf
                 <div class="mb-4">
                     <label for="nama" class="block text-gray-700 font-semibold mb-2">Nama:</label>
                     <input type="text" id="nama" name="nama" placeholder="Masukkan nama" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
@@ -32,6 +33,7 @@
                 </div>
                 <div class="text-center">
                     <button type="submit" class="bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Tambah</button>
+                    <a href="/" type="submit" class="bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Kembali</a>
                 </div>
             </form>
         </div>
