@@ -14,7 +14,7 @@ class MainController extends Controller
     }
 
     public function tambahData(){
-        return view('dashboard');
+        return view('tambah');
     }
 
     public function edit($id){

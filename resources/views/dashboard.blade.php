@@ -8,25 +8,15 @@
     @vite('resources/css/app.css')
 </head>
 <body class="font-poppins">
-    <header class="py-[20px] bg-light shadow-md border">
-        <nav class="flex w-full items-center justify-between px-[150px]">
-            <h1 class="font-semibold text-[22px]">NICO FLASSY</h1>
-            <ul class="flex gap-7 items-center text-black1 font-regular text-[17px]">
-                <li class=" hover:text-blue1 cursor-pointer">Beranda</li>
-                <li class=" hover:text-blue1 cursor-pointer">Tambah Data</li>
-                <li class=" hover:text-blue1 cursor-pointer">Github</li>
-                <li class="px-6 py-2 bg-[#2A305C] text-white cursor-pointer">Login</li>
-            </ul>
-        </nav>
-    </header>
+    @include('navbar')
     <main >
         <section class="px-[150px] flex flex-col justify-center items-center w-full py-[150px]">
             <h1 class="mb-[50px] font-semibold text-[28px]">DATA MAHASISWA</h1>
             <div class="w-full px-[150px] mb-[10px] flex justify-end gap-2">
-                <a href="" class="flex items-center gap-2 bg-green-700 px-4 py-2 text-white text-[18px]"><x-ri-add-circle-fill class="w-[30px]"/>Tambah Data</a>
+                <a href="/tambah" class="flex items-center gap-2 bg-green-700 px-4 py-2 text-white text-[18px]"><x-ri-add-circle-fill class="w-[30px]"/>Tambah Data</a>
             </div>
             <table class="border">
-                <thead class="bg-navy text-white font-regular text-center">
+                <thead class="bg-blue-900 text-white font-regular text-center">
                     <tr>
                         <td class="py-[10px] px-[50px] border border-white">No</td>
                         <td class="py-[10px] px-[50px] border border-white">NIM</td>

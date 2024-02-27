@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [MainController::class, 'index']);
 Route::get('/tambah', [MainController::class, 'tambahData']);
 Route::get('/edit/${id}', [MainController::class, 'edit']);
+Route::get('/edit', [MainController::class, 'tampilEdit']);
