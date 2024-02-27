@@ -36,7 +36,10 @@
                         <td class="py-[10px] px-[50px] border">{{ $mahasiswa->angkatan }}</td>
                         <td class="py-[10px] px-[50px] border flex gap-2">
                             <a href="/edit/{{ $mahasiswa->id }}" class="bg-blue-800 p-2 rounded-full"><x-feathericon-edit class="w-[18px] h-[18px] text-white"/></a>
-                            <a href="" class="bg-red-800 p-2 rounded-full"><x-gmdi-delete class="w-[18px] h-[18px] text-white"/></a>
+                            <form action="/delete/{{ $mahasiswa->id }}" method="post" class="flex">
+                                @csrf
+                                <button type="submit" class="bg-red-800 p-2 rounded-full"><x-gmdi-delete class="w-[18px] h-[18px] text-white"/></button>
+                            </form>
                         </td>
                     </tr>  
                         

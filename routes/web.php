@@ -17,5 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [MainController::class, 'index'])->name('dashboard');
 Route::get('/tambah', [MainController::class, 'tambahData']);
 Route::post('/store', [MainController::class, 'store']);
-Route::get('/edit/${id}', [MainController::class, 'edit']);
+Route::get('/edit/{id}', [MainController::class, 'edit']);
 Route::get('/edit', [MainController::class, 'tampilEdit']);
+Route::post('/update/{id}', [MainController::class, 'update']);
+Route::post('/delete/{id}', [MainController::class, 'delete']);
