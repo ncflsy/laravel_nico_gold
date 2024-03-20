@@ -12,6 +12,12 @@ class MainController extends Controller
             'daftarmahasiswa' => Mahasiswa::all()
         ]);
     }
+    
+    public function indexUser(){
+        return view('dashboard-view', [
+            'daftarmahasiswa' => Mahasiswa::all()
+        ]);
+    }
 
     public function tambahData(){
         return view('tambah');

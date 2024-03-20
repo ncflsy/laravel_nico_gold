@@ -18,7 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/', [MainController::class, 'index'])->name('dashboard');
+    Route::get('/admin/dashboard', [MainController::class, 'index'])->name('dashboard');
+    Route::get('/user/dashboard', [MainController::class, 'indexUser']);
     Route::get('/tambah', [MainController::class, 'tambahData']);
     Route::post('/store', [MainController::class, 'store']);
     Route::get('/edit/{id}', [MainController::class, 'edit']);
