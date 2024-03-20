@@ -50,5 +50,35 @@
     </body>
 
     <script src="/build/assets/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Sembunyikan dropdown saat halaman dimuat
+                $('#dropdown-menu').hide();
+    
+                // Tambahkan event listener untuk klik pada tombol dropdown
+                $('#dropdown-toggle').click(function() {
+                    // Periksa apakah dropdown sedang tersembunyi
+                    var isHidden = $('#dropdown-menu').is(':hidden');
+    
+                    // Jika tersembunyi, tampilkan dropdown; jika tidak tersembunyi, sembunyikan dropdown
+                    if (isHidden) {
+                        $('#dropdown-menu').show();
+                        $(this).attr('aria-expanded', 'true');
+                    } else {
+                        $('#dropdown-menu').hide();
+                        $(this).attr('aria-expanded', 'false');
+                    }
+                });
+    
+                // Tambahkan event listener untuk klik di luar dropdown menu
+                $(document).click(function(event) {
+                    if (!$(event.target).closest('#dropdown-menu, #dropdown-toggle').length) {
+                        $('#dropdown-menu').hide();
+                        $('#dropdown-toggle').attr('aria-expanded', 'false');
+                    }
+                });
+            });
+        </script>
 </body>
 </html>
