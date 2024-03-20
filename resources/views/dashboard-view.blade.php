@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Website Data Mahasiswa</title>
-    <link rel="stylesheet" href="/build/assets/app-qk1y9ceR.css">
+    {{-- <link rel="stylesheet" href="/build/assets/app.css"> --}}
+    @vite('resources/css/app.css')
 </head>
 <body class="font-poppins">
     @include('navbar')

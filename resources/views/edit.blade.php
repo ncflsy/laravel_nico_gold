@@ -7,7 +7,7 @@
     <title>Website Data Mahasiswa</title>
     <!-- Include Tailwind CSS -->
     {{-- @vite('resources/css/app.css') --}}
-    <link rel="stylesheet" href="/build/assets/app-qk1y9ceR.css">
+    <link rel="stylesheet" href="/build/assets/app.css">
 </head>
 <body class="font-poppins">
     

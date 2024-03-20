@@ -1,5 +1,5 @@
-<header class="bg-light py-[30px] shadow-md border">
-    <nav class="flex w-full py-[30px] items-center justify-between px-[150px]">
+<header class="bg-light h-[80px] shadow-md border flex items-center">
+    <nav class="flex w-full items-center justify-between px-[150px]">
         <h1 class="font-semibold text-[22px]">NICO FLASSY</h1>
         <ul class="flex gap-7 items-center text-black1 font-regular text-[17px]">
             <li class=" hover:text-blue1 cursor-pointer">Beranda</li>

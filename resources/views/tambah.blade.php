@@ -7,6 +7,7 @@
     <title>Website Data Mahasiswa</title>
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/build/assets/app.css">
 </head>
 <body class="font-poppins">
     
