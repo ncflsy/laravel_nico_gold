@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Website Data Mahasiswa</title>
     <!-- Include Tailwind CSS -->
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
     <link rel="stylesheet" href="/build/assets/app.css">
 </head>
 <body class="font-poppins">

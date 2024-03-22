@@ -57,7 +57,7 @@ class LoginController extends Controller
                     'name' => $request->name,
                     'email' => $request->email,
                     'password' => Hash::make($request->password),
-                    'role' => 'guest',
+                    'role' => 'user',
                 ]);
                 return redirect('/login');
            }else{

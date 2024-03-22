@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Website Data Mahasiswa</title>
     <link rel="stylesheet" href="/build/assets/app.css">
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
 </head>
 <body class="font-poppins">
     @include('navbar')
